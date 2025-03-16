@@ -1,5 +1,5 @@
 # Stock Market Prediction Tool
-![stock-market-banner-3](https://github.com/user-attachments/assets/54fa432e-1134-46c4-8cdb-374d118b7d0f)
+![stock-market-banner-1](https://github.com/user-attachments/assets/ccf5614a-5865-48d1-a43a-df788bd6f951)
 
 
 
