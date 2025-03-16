@@ -1,12 +1,11 @@
 # Stock Market Prediction Tool
-![stock-market-banner-github](https://github.com/user-attachments/assets/4fd68d3d-0cd4-4a7b-a1b9-058cc0f7c0f0)
+![stock-market-banner-github-2](https://github.com/user-attachments/assets/13ce9a78-def1-4e82-a885-5bed6b7251f3)
 
 
 
-A simple, user-friendly Python tool for predicting stock market prices by utilizing historical data, machine learning models, and clear visualizations to help predict how investments might perform in the future.
 
 ## Description
-Coming Soon...
+A simple, user-friendly Python tool for predicting stock market prices by utilizing historical data, machine learning models, and clear visualizations to help predict how investments might perform in the future.
 
 
 ## How to Use It
