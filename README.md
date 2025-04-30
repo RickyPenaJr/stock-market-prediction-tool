@@ -44,6 +44,8 @@ stock-market-tool/
 │   └── visualize.py        # Generate plots for price trends and predictions
 ├── powerbi/                # Power BI dashboards and exports
 ├── requirements.txt        # Python dependency list
+├── .gitignore              # Excludes cache, envs, models, and sensitive files from Git
+├── LICENSE                 # MIT License for open-source usage
 └── README.md               # Project documentation
 </pre>
 
