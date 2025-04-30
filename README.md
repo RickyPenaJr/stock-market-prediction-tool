@@ -21,10 +21,6 @@ This project aims to provide investors, students, and financial analysts with a 
 <br>
 <br>
 
-## How to Use It
-Coming Soon...
-<br>
-<br>
 
 ## Features
 - 📡 Real-time stock data via APIs and web scraping
@@ -34,4 +30,25 @@ Coming Soon...
 - ⚙️ Automated data sync and preprocessing
 <br>
 
-## Project Structure
+## 📁 Project Structure
+
+<pre>
+stock-market-tool/
+├── data/                   # Raw CSVs or SQL database backups
+├── notebooks/              # Jupyter notebooks for exploration and modeling
+│   └── stock_prediction.ipynb
+├── src/                    # Python scripts for automation
+│   ├── api_fetch.py        # Get stock data from APIs
+│   ├── db_utils.py         # Create, insert, and query SQL database
+│   ├── model_train.py      # Train and evaluate prediction models
+│   └── visualize.py        # Generate plots for price trends and predictions
+├── powerbi/                # Power BI dashboards and exports
+├── requirements.txt        # Python dependency list
+└── README.md               # Project documentation
+</pre>
+
+<br>
+
+## ⚙️ How to Use It
+
+### 1. Clone the Repository
