@@ -39,6 +39,7 @@ This project provides investors, students, and financial analysts with a lightwe
 <pre>
 stock-market-tool/
 ├── data/                   # Raw CSVs or SQL database backups
+│   └── .gitkeep            # Keeps empty folder in repo
 ├── notebooks/              # Jupyter notebooks for exploration and modeling
 │   └── stock_prediction.ipynb
 ├── src/                    # Python scripts for automation & dashboard
@@ -48,11 +49,11 @@ stock-market-tool/
 │   ├── visualize.py        # Generate plots for price trends and predictions
 │   └── dashboard.py        # Streamlit app for interactive dashboard
 ├── powerbi/                # Power BI dashboards and exports
+│   └── .gitkeep            # Keeps empty folder in repo
 ├── requirements.txt        # Python dependency list
 ├── .gitignore              # Excludes cache, envs, models, and sensitive files from Git
 ├── LICENSE                 # MIT License for open-source usage
 └── README.md               # Project documentation
-
 </pre>
 
 <br>
