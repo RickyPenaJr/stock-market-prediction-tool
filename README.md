@@ -5,29 +5,33 @@
 
 
 ## 📘 Project Description
-A simple, user-friendly Python tool for predicting stock market prices by utilizing historical data, machine learning models, and clear visualizations to help predict how investments might perform in the future.
+A simple, user-friendly Python tool for predicting stock market prices by utilizing historical data, machine learning models, and clear visualizations to help forecast how investments might perform in the future.
 
-This project aims to provide investors, students, and financial analysts with a lightweight analytics pipeline that fetches real-time and historical stock data, cleans and stores it, runs predictive models, and visualizes trends through interactive graphs and dashboards.
+This project provides investors, students, and financial analysts with a lightweight analytics pipeline that:
+- Fetches historical stock data via `yfinance`
+- Cleans and stores it in a local SQL database
+- Trains predictive models on past price movements
+- Generates interactive trend and prediction charts
 <br>
 <br>
 
 
 ## ✅ What This Project Does
-- ✔ Fetches live and historical stock data using APIs (Yahoo Finance / Alpha Vantage)  
-- ✔ Stores and organizes the data in a SQL database for long-term tracking  
-- ✔ Trains machine learning models on historical price data to predict future closing prices  
-- ✔ Displays clean visualizations of price trends and model predictions  
-- ✔ Links to Power BI dashboards for high-level business intelligence reporting  
+- ✔ Fetches historical stock data using `yfinance`  
+- ✔ Stores and organizes data in a local SQL database  
+- ✔ Trains machine learning models (Linear Regression, Random Forest) on historical prices  
+- ✔ Plots actual vs. predicted closing prices  
+- ✔ Prepares exports for Power BI dashboarding  
 <br>
 <br>
 
 
 ## 🚀 Features
-- 📡 Real-time stock data via APIs and web scraping
-- 🧠 Predictive machine learning models (Linear Regression, Random Forest)
-- 🗃️ SQL database storage and ETL pipeline
-- 📊 Visualizations with Power BI and Matplotlib
-- ⚙️ Automated data sync and preprocessing
+- 📈 Historical data retrieval with `yfinance`  
+- 🤖 Predictive modeling using scikit-learn  
+- 🗃️ SQLite database for time-series storage  
+- 📊 Visualizations with Power BI & Matplotlib (Plotly optional)  
+- 🔄 Fully automated end-to-end pipeline  
 <br>
 
 ## 📁 Project Structure
@@ -55,35 +59,35 @@ stock-market-tool/
 
 ## ⚙️ How to Use It
 
-1. **Clone the Repository**  
+1. **Clone the repo**  
        git clone https://github.com/rickypenajr/stock-market-tool.git  
        cd stock-market-tool  
 
-2. **Install Dependencies**  
+2. **Install dependencies**  
        pip install -r requirements.txt  
 
-3. **Set Up API Key**  
-   - Create a `.env` file in the root directory with:  
-         ALPHA_VANTAGE_API_KEY=your_api_key_here  
-
-4. **Fetch and Store Stock Data**  
+3. **Fetch & store historical data**  
        python src/api_fetch.py  
-   This pulls data from the API and saves it into a local SQL database (SQLite by default).
+   - By default downloads **AAPL** from 2015-01-01 to today  
+   - To specify another symbol or date range, edit the `fetch_stock_data()` defaults or add arguments  
 
-5. **Train the Prediction Model**  
+4. **Populate the database**  
+       python src/db_utils.py  
+   - Creates `data/stock_data.db` and imports the CSV  
+
+5. **Train the prediction model**  
        python src/model_train.py  
-   Loads historical data, trains a machine learning model, and saves predictions.
+   - Reads from the DB, trains a Linear Regression, saves `data/stock_model.pkl`  
 
-6. **Visualize the Results**  
+6. **Generate visualizations**  
        python src/visualize.py  
-   Generates visual charts comparing predicted vs. actual prices.
+   - Produces a plot of actual vs. predicted close price and saves `data/stock_prediction_plot.png`  
 
-7. **Use the Jupyter Notebook (Optional)**  
+7. **Explore interactively (optional)**  
        jupyter notebook notebooks/stock_prediction.ipynb  
-   Explore, tweak models, and test predictions interactively.
 
-8. **View Power BI Dashboard (Optional)**  
-   Open the `.pbix` files in the `powerbi/` folder to explore interactive dashboards.
+8. **View Power BI dashboards (optional)**  
+   Open the `.pbix` files in `/powerbi/` 
 
 <br>
 
@@ -97,19 +101,9 @@ stock-market-tool/
 ## 🧠 Technologies Used
 
 - **Languages**: Python, SQL  
-- **Libraries**: pandas, NumPy, matplotlib, scikit-learn, yfinance, requests, python-dotenv  
-- **Database**: SQLite (default), MySQL (optional)  
-- **APIs**: Alpha Vantage, Yahoo Finance  
-- **Visualization**: Power BI, Plotly, Matplotlib  
-
-
-
-## 🛠️ Future Enhancements
-
-- Add LSTM or Prophet for advanced forecasting  
-- Deploy a web interface with Flask or Streamlit  
-- Real-time dashboard updates using cloud services  
-- User-defined stock ticker and date-range input
+- **Libraries**: `yfinance`, `pandas`, `NumPy`, `scikit-learn`, `matplotlib`, `joblib`  
+- **Database**: SQLite  
+- **Visualization**: Matplotlib, Plotly (optional), Power BI  
 
 
 
