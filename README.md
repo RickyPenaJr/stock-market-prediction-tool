@@ -91,7 +91,6 @@ stock-market-tool/
 - Technical Indicators (SMA, RSI, EMA)  
 - Power BI Overview Dashboard  
 
----
 
 ## 🧠 Technologies Used
 
@@ -101,7 +100,7 @@ stock-market-tool/
 - **APIs**: Alpha Vantage, Yahoo Finance  
 - **Visualization**: Power BI, Plotly, Matplotlib  
 
----
+
 
 ## 🛠️ Future Enhancements
 
@@ -109,17 +108,18 @@ stock-market-tool/
 - Deploy a web interface with Flask or Streamlit  
 - Real-time dashboard updates using cloud services  
 - User-defined stock ticker and date-range input
----
+
+
 
 ## 📌 License
 MIT License
 
----
+
 
 ## 🏷️ GitHub Topics
 `#python` `#stock-market` `#machine-learning` `#data-visualization` `#financial-analysis` `#yfinance` `#sql` `#pandas` `#matplotlib` `#time-series` `#regression-model` `#jupyter-notebook` `#powerbi` `#predictive-modeling`
 
----
+
 
 ## 👤 Author
 
@@ -127,5 +127,3 @@ MIT License
 📍 Houston, TX  
 🌐 [rickypenajr.github.io](https://rickypenajr.github.io)  
 🔗 [GitHub](https://github.com/rickypenajr) • [LinkedIn](https://linkedin.com/in/rickypenajr)
-
----
