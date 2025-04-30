@@ -41,16 +41,18 @@ stock-market-tool/
 ├── data/                   # Raw CSVs or SQL database backups
 ├── notebooks/              # Jupyter notebooks for exploration and modeling
 │   └── stock_prediction.ipynb
-├── src/                    # Python scripts for automation
-│   ├── api_fetch.py        # Get stock data from APIs
-│   ├── db_utils.py         # Create, insert, and query SQL database
-│   ├── model_train.py      # Train and evaluate prediction models
-│   └── visualize.py        # Generate plots for price trends and predictions
+├── src/                    # Python scripts for automation & dashboard
+│   ├── api_fetch.py        # Get historical stock data via yfinance
+│   ├── db_utils.py         # Create, insert, and query SQLite database
+│   ├── model_train.py      # Train and evaluate regression models
+│   ├── visualize.py        # Generate plots for price trends and predictions
+│   └── dashboard.py        # Streamlit app for interactive dashboard
 ├── powerbi/                # Power BI dashboards and exports
 ├── requirements.txt        # Python dependency list
 ├── .gitignore              # Excludes cache, envs, models, and sensitive files from Git
 ├── LICENSE                 # MIT License for open-source usage
 └── README.md               # Project documentation
+
 </pre>
 
 <br>
