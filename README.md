@@ -51,4 +51,68 @@ stock-market-tool/
 
 ## ⚙️ How to Use It
 
-### 1. Clone the Repository
+1. **Clone the Repository**  
+       git clone https://github.com/rickypenajr/stock-market-tool.git  
+       cd stock-market-tool  
+
+2. **Install Dependencies**  
+       pip install -r requirements.txt  
+
+3. **Set Up API Key**  
+   - Create a `.env` file in the root directory with:  
+         ALPHA_VANTAGE_API_KEY=your_api_key_here  
+
+4. **Fetch and Store Stock Data**  
+       python src/api_fetch.py  
+   This pulls data from the API and saves it into a local SQL database (SQLite by default).
+
+5. **Train the Prediction Model**  
+       python src/model_train.py  
+   Loads historical data, trains a machine learning model, and saves predictions.
+
+6. **Visualize the Results**  
+       python src/visualize.py  
+   Generates visual charts comparing predicted vs. actual prices.
+
+7. **Use the Jupyter Notebook (Optional)**  
+       jupyter notebook notebooks/stock_prediction.ipynb  
+   Explore, tweak models, and test predictions interactively.
+
+8. **View Power BI Dashboard (Optional)**  
+   Open the `.pbix` files in the `powerbi/` folder to explore interactive dashboards.
+
+<br>
+
+## 📊 Sample Visuals (Coming Soon)
+
+- Predicted vs Actual Closing Price Comparison  
+- Technical Indicators (SMA, RSI, EMA)  
+- Power BI Overview Dashboard  
+
+---
+
+## 🧠 Technologies Used
+
+- **Languages**: Python, SQL  
+- **Libraries**: pandas, NumPy, matplotlib, scikit-learn, yfinance, requests, python-dotenv  
+- **Database**: SQLite (default), MySQL (optional)  
+- **APIs**: Alpha Vantage, Yahoo Finance  
+- **Visualization**: Power BI, Plotly, Matplotlib  
+
+---
+
+## 🛠️ Future Enhancements
+
+- Add LSTM or Prophet for advanced forecasting  
+- Deploy a web interface with Flask or Streamlit  
+- Real-time dashboard updates using cloud services  
+- User-defined stock ticker and date-range input  
+
+---
+
+## 👤 Author
+
+**Ricky Peña Jr.**  
+📍 Houston, TX  
+🌐 [rickypenajr.github.io](https://rickypenajr.github.io)  
+🔗 [GitHub](https://github.com/rickypenajr) • [LinkedIn](https://linkedin.com/in/rickypenajr)
