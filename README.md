@@ -1,4 +1,4 @@
-# Stock Market Prediction Tool
+# Stock Market Prediction Project
 ![stock-market-banner-1](https://github.com/user-attachments/assets/ccf5614a-5865-48d1-a43a-df788bd6f951)
 <br>
 <br>
