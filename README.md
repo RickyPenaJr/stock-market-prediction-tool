@@ -5,7 +5,7 @@
 
 
 ## 📘 Project Description
-A simple, user-friendly Python tool for predicting stock market prices by utilizing historical data, machine learning models, and clear visualizations to help forecast how investments might perform in the future.
+A simple, Python project for predicting stock market prices by utilizing historical data, machine learning models, and clear visualizations to help forecast how investments might perform in the future.
 
 This project provides investors, students, and financial analysts with a lightweight analytics pipeline that:
 - Fetches historical stock data via `yfinance`
